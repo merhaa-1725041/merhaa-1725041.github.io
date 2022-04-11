@@ -3,7 +3,7 @@
     <head>
         <title> Merhawi's Website </title>
     </head>
-    <body>
+    <body style="background-color: lightblue;">
         <h1>Merhawi Abraha</h1>
 
         <h2 > About Me </h2 >
@@ -32,6 +32,55 @@
             <a href= "https://www.panerabread.com/en-us/app/product/927bd92fa7a65d4b7c657ed61672bbe9.html">
                 <img src="https://4.bp.blogspot.com/-pGqe-4zRbDM/WQCZF5SiWmI/AAAAAAAA2UM/p59p8tVvH8oPre3ZSmH4Ilrw2yJIULOOQCLcB/w1200-h630-p-k-no-nu/panera-southwest-chile-lime-ranch-salad-with-chicken.jpg" title="cute husky" style= "width:100px; height:100px" alt = "cute husky in a snow">
             </a>
+        
 
+
+            <!-- <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe> -->
+
+            <p><b>This week's work is a little more time consuming</b></p>
+
+
+            <!-- <button type="button" onclick="alert('INFO 101 Week 2 lesson!')">Click Me!</button> -->
+
+            <!-- all the extra five extra tags are created here -->
+            <button onclick="showContent()">Show hidden content</button>
+
+            <template>
+            <h2>cute cat</h2>
+            <img src="cutecat.jpeg" width="214" height="204">
+            </template>
+
+            <script>
+                function showContent() {
+                  var temp = document.getElementsByTagName("template")[0];
+                  var clon = temp.content.cloneNode(true);
+                  document.body.appendChild(clon);
+                }
+            </script>
+
+
+            <div>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+            </div>
+
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>    
+
+
+            <footer>
+                <p>Author: Merhawi Abraha<br>
+                <a href="https://myplan.uw.edu/course/#/courses/INFO101">Project for INFO 101</a></p>
+            </footer>
+
+
+     
     </body>
 </html>
